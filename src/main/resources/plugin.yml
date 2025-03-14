@@ -1,0 +1,4 @@
+name: lunhookah
+version: '1.0'
+main: org.lunland.lunhookah.Lunhookah
+api-version: '1.21'
