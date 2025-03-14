@@ -1,0 +1,23 @@
+brewingStandDisplayName: "Кальян"
+bambooDisplayName: "Кальянный Мундштук"
+
+message:
+  alreadyTaken: "<red>С этой стойки уже взят кальянный мундштук.</red>"
+  alreadyHaveBamboo: "<yellow>У вас уже есть кальянный мундштук.</yellow>"
+  giveBamboo: "<green>Вы получили кальянный мундштук. Используйте его, чтобы курить.</green>"
+  wait: "<gold>Подождите, прежде чем сделать следующую затяжку.</gold>"
+  puff: "<aqua>Ви сделали затяжку кальяна.</aqua>"
+  bambooDropped: "<gray>Кальянный мундштук возвращен в кальян.</gray>"
+
+# Крафт
+recipe:
+  brewingStand:
+    shape:
+      - " B "
+      - " S "
+      - " B "
+
+    ingredients:
+      B: "BAMBOO"
+      S: "BREWING_STAND"
+      #....

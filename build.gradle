@@ -15,11 +15,19 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
 }
+
 
 dependencies {
     compileOnly("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT")
+    compileOnly("net.kyori:adventure-api:4.19.0")
+    compileOnly("net.kyori:adventure-text-minimessage:4.19.0")
 }
+
 
 def targetJavaVersion = 21
 java {
@@ -43,7 +51,7 @@ processResources {
     def props = [version: version]
     inputs.properties props
     filteringCharset 'UTF-8'
-    filesMatching('plugin.yml') {
+    filesMatching('config.yml') {
         expand props
     }
 }
